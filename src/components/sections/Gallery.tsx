@@ -1,18 +1,17 @@
 "use client";
 
 import { useState } from "react";
-import Image from "next/image";
 import { Card } from "@/components/ui/card";
 import { cn } from "@/lib/utils";
 import { ChevronLeft, ChevronRight } from "lucide-react";
-import { certifications } from "@/data/site";
+
+const PLACEHOLDER_COUNT = 15;
 
 export function Gallery() {
   const [startIndex, setStartIndex] = useState(0);
   const [activeIndex, setActiveIndex] = useState<number | null>(null);
   const visibleCount = 5;
-  const items = certifications.filter((cert) => cert.image);
-  const maxStart = Math.max(0, items.length - visibleCount);
+  const maxStart = Math.max(0, PLACEHOLDER_COUNT - visibleCount);
 
   function prev() {
     setStartIndex((i) => (i <= 0 ? maxStart : i - 1));
@@ -40,8 +39,6 @@ export function Gallery() {
           <div className="grid flex-1 grid-cols-5 gap-2">
             {Array.from({ length: visibleCount }, (_, offset) => {
               const i = startIndex + offset;
-              const cert = items[i];
-              if (!cert) return null;
               return (
                 <Card
                   key={i}
@@ -51,14 +48,9 @@ export function Gallery() {
                   )}
                   onClick={() => setActiveIndex(activeIndex === i ? null : i)}
                 >
-                  {cert.image ? (
-                    <Image
-                      src={cert.image}
-                      alt={cert.name}
-                      fill
-                      className="object-cover"
-                    />
-                  ) : null}
+                  <div className="flex h-full w-full items-center justify-center bg-muted text-muted-foreground">
+                    <span className="text-xs font-medium">{i + 1}</span>
+                  </div>
                 </Card>
               );
             })}
