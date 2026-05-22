@@ -1,70 +1,138 @@
 export const site = {
-  name: "Kier Patrick Empang",
+  name: "Junalea Mhae F. Gallogo",
   location: "Butuan City, Philippines",
-  tagline: "Software Engineer | Web Developer | UX/UI Designer",
-  /** Optional: URL to profile image (e.g. /avatar.jpg). Leave empty for initials placeholder. */
-  avatarUrl: "" as string | undefined,
-  /** Show verified checkmark next to name */
+  tagline: "BSIT Student | UI Designer | Aspiring Developer",
+
+  avatarUrl: "/avatar.jpg" as string | undefined,
+
   verified: true,
-  /** Optional: Facebook profile URL – verified badge links here when set */
-  facebookUrl: "" as string | undefined,
-  email: "your@email.com",
-  calendlyUrl: "https://calendly.com/your-link",
-  blogUrl: "https://blog.yoursite.com",
-  linkedin: "https://linkedin.com/in/yourprofile",
-  github: "https://github.com/yourprofile",
-  instagram: "https://instagram.com/yourprofile",
+
+  facebookUrl: "https://www.facebook.com/junalea.mhae.fajardo.gallogo.2025" as string | undefined,
+
+  email: "junaleamhae.gallogo@carsu.edu.ph",
+
+  calendlyUrl: "",
+
+  blogUrl: "",
+
+  linkedin: "https://www.linkedin.com/in/jmfgservices/",
+
+  github: "https://github.com/JunaleaGallogo",
+
+  instagram: "https://www.instagram.com/mhaejnl/",
 };
 
-export const heroBadges: { label: string; href: string; subtitle?: string }[] = [];
+export const heroBadges: { label: string; href: string; subtitle?: string }[] = [
+  {
+    label: "Mutya Hong Baan 2024",
+    href: "#",
+  },
+  {
+    label: "Miss CCIS 2025",
+    href: "#",
+  },
+  {
+    label: "UI Design Enthusiast",
+    href: "#",
+  },
+];
 
-export const about = `I am a full-stack software engineer with hands-on experience in end-to-end product development, from requirements gathering and system planning to implementation, optimization, and long-term maintenance. I am currently part of ISySS-CDM, a three-year project where I work as a senior programmer and take on key responsibilities in data gathering, software development, architecture design, and making sure the codebase remains efficient, scalable, and maintainable as the project grows.
+export const about = `I am Junalea Mhae Fajardo Gallogo, a third-year Bachelor of Science in Information Technology student at Caraga State University — driven by purpose, fueled by passion, and committed to creating solutions that make a difference.
 
-Beyond full-stack engineering, I also have a strong interest in immersive technologies and have previously contributed to a DOST-funded initiative, MARVELTechnologies, which focused on building AR/VR solutions through mining simulation use cases. That experience expanded my perspective on simulation-driven learning and interactive environments, and it strengthened my ability to design solutions across both traditional and emerging platforms.
+I have knowledge in C, Java, PHP, Python, HTML, CSS, database management, and data structures. While I continue improving my programming skills, I am especially passionate about UI design and creating visually engaging and user-friendly interfaces.
 
-I also work on mobile development using React Native and Flutter, and I continue to broaden my technical focus through DevOps automation, workflow improvement, and AI-powered solutions that help teams deliver faster, smarter, and with greater consistency.`; 
+One of my proudest achievements was successfully defending our capstone proposal, which strengthened my confidence, communication skills, and ability to transform ideas into meaningful solutions.
+
+Beyond academics, I also discovered confidence and leadership through pageantry and competitions. I was crowned Mutya Hong Baan 2024 and Miss College of Computing and Information Sciences 2025, and became the Entrada First Runner-Up in the EMBLEM Competition.
+
+As I continue my journey in technology and design, I aim to use both my skills and my voice to inspire, advocate, and contribute to building safer, stronger, and more innovative communities.`;
 
 export const experience = [
-  { role: "Senior Programmer", company: "ISySS-CDM CSU", year: "2026" },
-  { role: "Systems Analyst", company: "DA-BAFE ABEMIS3.0", year: "2025" },
-  { role: "Part Time Faculty", company: "CCIS-CSU", year: "2024" },
-  { role: "Evaluator", company: "FaMRIA, DA BAFE", year: "2024" },
   {
-    role: "Master of Science in Information Tech",
+    role: "BS Information Technology Student",
     company: "Caraga State University",
+    year: "2023 - Present",
+  },
+  {
+    role: "Capstone Research Presenter",
+    company: "Caraga State University",
+    year: "2025",
+  },
+  {
+    role: "Mutya Hong Baan 2024",
+    company: "Pageant Title Holder",
     year: "2024",
   },
-  { role: "Junior Developer", company: "MARVELTechnologies", year: "2022" },
-  { role: "Admin Staff", company: "OWWA Caraga", year: "2019-2022" },
-  { role: "BS Information Technology", company: "Caraga State University", year: "2019" },
-  { role: "Hello World", company: "Started my coding journey", year: "2015" },
+  {
+    role: "Miss College of Computing and Information Sciences",
+    company: "Caraga State University",
+    year: "2025",
+  },
+  {
+    role: "Entrada First Runner-Up",
+    company: "EMBLEM Competition",
+    year: "2025",
+  },
 ];
 
 export const techStack = {
   frontend: [
+    "HTML",
+    "CSS",
     "JavaScript",
-    "TypeScript",
     "React",
-    "Next.js",
-    "Tailwind CSS",
+    "UI/UX Design",
   ],
-  backend: ["Node.js", "Python", "PostgreSQL", "MongoDB"],
-  devops: ["AWS", "Docker", "Kubernetes", "GitHub Actions"],
+
+  backend: [
+    "PHP",
+    "Java",
+    "Python",
+    "C Programming",
+  ],
+
+  devops: [
+    "GitHub",
+    "Git",
+    "Vercel",
+  ],
+
   modeling: [
-    "3D Modeling",
-    "Blender",
-    "Animation",
-    "Texture Editing",
-    "Unity Game Engine",
-    "C#",
+    "Figma",
+    "Canva",
+    "UI Prototyping",
+    "Wireframing",
   ],
 };
 
 export const projects = [
-  { name: "ISySS-CDM", description: "CSU & PNP collaborative system platform", url: "https://isyss-cdm.web.app/", domain: "isyss-cdm.web.app" },
-  { name: "ABEMIS 3.0", description: "Agricultural & Biosystems Engineering Management Information System", url: "https://abemis-front.vercel.app/", domain: "abemis-front.vercel.app" },
-  { name: "MARVEL Technologies", description: "AR/VR technology initiative and simulation platform", url: "https://chci.carsu.edu.ph/marvel-technologies/", domain: "chci.carsu.edu.ph" },
-  { name: "DYNAMIS Workout Tracker", description: "AI-powered workout tracker", url: "https://dynamis-app.online", domain: "dynamis-app.online" },
+  {
+    name: "Student Course Management System",
+    description: "Java RMI-based student and course management system",
+    url: "#",
+    domain: "Java RMI",
+  },
+
+  {
+    name: "Retail Product Management System",
+    description: "C-based inventory and product management system",
+    url: "#",
+    domain: "C Programming",
+  },
+
+  {
+    name: "Portfolio UI/UX Designs",
+    description: "Creative UI/UX layouts and interface prototypes",
+    url: "#",
+    domain: "UI/UX Design",
+  },
+
+  {
+    name: "Capstone Proposal Project",
+    description: "Research and system proposal presentation project",
+    url: "#",
+    domain: "Research Project",
+  },
 ];
 
 export const certifications: {
@@ -72,38 +140,58 @@ export const certifications: {
   issuer: string;
   href: string;
   year?: string;
+  image?: string;
 }[] = [
   {
-    name: "SPARK Technical Training for Blockchain Cryptocurrency Specialist Certification",
-    issuer: "Department of Information and Communications Technology",
+    name: "JavaScript Certificate",
+    issuer: "SoloLearn",
     href: "#",
+    image: "/JavaScript_Certificate.png"
   },
+
   {
-    name: "Coursera UX/UI Certification",
-    issuer: "Google",
+    name: "CSS Certificate",
+    issuer: "SoloLearn",
     href: "#",
+    image: "/CSS_Certificate.jpg"
   },
+
   {
-    name: "Project Management",
-    issuer: "University of the Philippines",
+    name: "HTML Certificate",
+    issuer: "SoloLearn",
     href: "#",
+    image: "/HTML_Certificate.jpg"
   },
+
+  {
+    name: "Python Certificate",
+    issuer: "SoloLearn",
+    href: "#",
+    image: "/Python_Certificate.png"
+  },
+
+  
 ];
 
 export const recommendations = [
-  { quote: "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Integer nec odio. Praesent libero. Sed cursus ante dapibus diam.", author: "Cris Lawrence Adrian Militante", title: "ICT Director at GCM" },
-  { quote: "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Integer nec odio. Praesent libero. Sed cursus ante dapibus diam.", author: "Ken Gorro", title: "Senior Developer at Fullscale" },
-  { quote: "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Integer nec odio. Praesent libero. Sed cursus ante dapibus diam.", author: "Patrick Vince Velasco", title: "Software Engineer, YNS" },
-  { quote: "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Integer nec odio. Praesent libero. Sed cursus ante dapibus diam.", author: "John Edmerson Pizarra", title: "Jr. Full-stack Developer, PocketDevs" },
-  { quote: "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Integer nec odio. Praesent libero. Sed cursus ante dapibus diam.", author: "Glenn Pepito", title: "Professor at University of San Carlos" },
-  { quote: "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Integer nec odio. Praesent libero. Sed cursus ante dapibus diam.", author: "Van Honoridez", title: "Application Development Analyst at Accenture" },
-  { quote: "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Integer nec odio. Praesent libero. Sed cursus ante dapibus diam.", author: "Zinia Ma. Consuelo R. Trinidad", title: "Web Developer, Quickway Holdings Inc." },
-  { quote: "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Integer nec odio. Praesent libero. Sed cursus ante dapibus diam.", author: "Jomar Neri", title: "Full-stack Developer, Freelance" },
+  {
+    quote:
+      "A passionate and confident student who continuously strives for growth and excellence.",
+    author: "Professor",
+    title: "Caraga State University",
+  },
+
+  {
+    quote:
+      "Creative in design and determined in achieving her goals both in academics and leadership.",
+    author: "Colleague",
+    title: "BSIT Student",
+  },
 ];
 
 export const memberships = [
   {
-    name: "Philippine Society of IT Educators – Caraga Chapter",
-    href: "https://psite.org/",
+    name: "College of Computing and Information Sciences",
+    href: "#",
   },
 ];

@@ -1,3 +1,4 @@
+import Image from "next/image";
 import Link from "next/link";
 import { certifications } from "@/data/site";
 import { Card, CardContent } from "@/components/ui/card";
@@ -24,6 +25,17 @@ export default function CertificationsPage() {
                 rel="noopener"
                 className="block p-6 transition hover:bg-muted/50"
               >
+                {cert.image ? (
+                  <div className="mb-4 overflow-hidden rounded-md">
+                    <Image
+                      src={cert.image}
+                      alt={cert.name}
+                      width={640}
+                      height={360}
+                      className="h-36 w-full object-cover"
+                    />
+                  </div>
+                ) : null}
                 <h2 className="font-semibold">{cert.name}</h2>
                 <p className="mt-1 text-sm text-muted-foreground">
                   {cert.year ? `${cert.issuer} · ${cert.year}` : cert.issuer}
